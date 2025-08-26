@@ -4,8 +4,11 @@ while True:
     choice = input("Welcome to the sigma shtua please enter your choice,a")
     if choice.lower() == 'append':
         val = str(input("What d u wanna append sjn?"))
-        array.append(val)
-        print(f"I append ts {val} now go away bviggy")
+        if val in array:
+            print("Alr in list twin choose sum else")
+        else:
+            array.append(val)
+            print(f"I append ts {val} now go away bviggy")
 
     elif choice.lower() == 'remove':
         val = str(input("wha do u wanna renove fam"))
