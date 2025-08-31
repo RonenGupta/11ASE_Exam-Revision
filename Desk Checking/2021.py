@@ -6,7 +6,6 @@ SearchItem = int(input("SearchItem: "))
 while found == False and high > low:
     index = low + high
     index = int(index / 2)
-    print(index)
     if SearchItem == list[index]:
         found = True
     else:
