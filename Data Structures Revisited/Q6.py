@@ -10,11 +10,11 @@ while True:
         print(f"Added {name} with phone no. {phone} to the phonebook!")
         
     elif val.lower() == 'view':
-            nam = input("Enter a name to find their number: ")
-            if nam not in phone_book:
-                 print(f"{nam} is not in your phonebook!")
+            name1 = input("Enter a name to find their number: ")
+            if name1 not in phone_book:
+                 print(f"{name1} is not in your phonebook!")
             else:
-                 print(phone_book.get(nam))
+                 print(phone_book[name1])
 
     elif val.lower() == 'delete':
          delete = input('Enter a name to delete from the phonebook: ')
